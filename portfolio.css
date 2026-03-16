@@ -602,16 +602,33 @@ width:0;
 #contact-form button {
     width: auto;
     padding: 12px 35px;
-    background-color: #C08552;
+    background: linear-gradient(135deg, #C08552, #8C5A3C);
     color: #FFF8F0;
     border: none;
     border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
 
+/* Hover effect */
 #contact-form button:hover {
-    background-color: #8C5A3C;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Click / press effect */
+#contact-form button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Accessibility focus ring */
+#contact-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(192,133,82,0.35);
 }
 
 @media (max-width: 768px) {
