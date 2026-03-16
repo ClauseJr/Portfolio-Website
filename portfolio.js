@@ -1,7 +1,7 @@
 // ---- Hamburger toggle ----
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const API_BASE = "https://smooth-readers-return.loca.lt";
+const API_BASE = "https://my-portfolio-backend.loca.lt";
 const TRACK_URL = `${API_BASE}/track/`;
 const PROJECTS_URL = `${API_BASE}/projects/`;
 const CONTACT_URL = `${API_BASE}/contact/`;
