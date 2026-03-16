@@ -1,6 +1,10 @@
 // ---- Hamburger toggle ----
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
+const API_BASE = "https://smooth-readers-return.loca.lt";
+const TRACK_URL = `${API_BASE}/track/`;
+const PROJECTS_URL = `${API_BASE}/projects/`;
+const CONTACT_URL = `${API_BASE}/contact/`;
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
@@ -55,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ---- Load projects from backend ----
     async function loadProjects() {
         try {
-            const response = await fetch("http://127.0.0.1:8000/projects/");
+            const response = await fetch(`${API_BASE}/projects/`);
             const projects = await response.json();
             const container = document.getElementById("projects-container");
             if (!container) return;
@@ -80,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Call projects loader
     loadProjects();
 
     // ---- Contact form submission ----
@@ -100,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(form);
 
         try {
-            const res = await fetch("http://127.0.0.1:8000/contact/", {
+            const res = await fetch(`${API_BASE}/contact/`, {
                 method: "POST",
                 body: formData
             });
@@ -120,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Track home page visit
-fetch("http://127.0.0.1:8000/track/", {
+fetch(`${API_BASE}/track/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -131,7 +134,7 @@ fetch("http://127.0.0.1:8000/track/", {
 });
 
 // Track projects page visit
-fetch("http://127.0.0.1:8000/track/", {
+fetch(`${API_BASE}/track/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -156,7 +159,7 @@ window.addEventListener('load', function() {
 });
 
 // ---------------- CONFIG ----------------
-const API_URL = "http://127.0.0.1:8000/track/"; // FastAPI tracking endpoint
+const API_URL = `${API_BASE}/track/`; // FastAPI tracking endpoint
 const projectsContainer = document.getElementById("projects-container");
 
 // ---------------- TRACKING FUNCTION ----------------
@@ -202,7 +205,7 @@ if (contactForm) {
 // ---------------- LOAD PROJECTS ----------------
 async function loadProjects() {
     try {
-        const res = await fetch("http://127.0.0.1:8000/projects/");
+        const res = await fetch(`${API_BASE}/projects/`);
         const projects = await res.json();
 
         projectsContainer.innerHTML = ""; // Clear container
