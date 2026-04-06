@@ -90,7 +90,7 @@ section{
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 10px 15px;
+        padding: 20px 15px;
     }
 
     #nav-logo {
