@@ -36,15 +36,8 @@ color:#F3F4F6;
     align-items: center;
     transition: transform 0.3s;
     height: 0;
-    margin-left: 8%;
-}
-
-#nav-logo {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
-    padding: 8px;
-    z-index: 1000;
+    margin-left: 5%;
+    font-size: 15px;
 }
 
 
@@ -94,8 +87,9 @@ section{
     }
 
     #nav-logo {
-        height: 48px;
-        margin-top: 5px;
+        height: 15px;
+        font-size: 15px;
+        
     }
 
     .nav-links {
@@ -608,6 +602,7 @@ from{
 width:0;
 }
 }
+
 
 /* Contact Section */
 .contact {

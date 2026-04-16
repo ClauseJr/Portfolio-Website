@@ -72,10 +72,10 @@ const projects = [
     },
     {
         id: 4,
-        title: "Employee Attrition Analysis",
-        description: "Analyzed HR datasets to identify key factors driving employee turnover. The project uncovers patterns related to job satisfaction, compensation, and work environment to help organizations improve retention strategies.",
-        tech_stack: "SQL, Excel, Power BI",
-        github_url: "https://github.com/ClauseJr/Employee-Attrition-Project"
+        title: "Employee Turnover Analysis",
+        description: "This project presents an end-to-end analysis of employee attrition using Excel, SQL, Python, and Power BI. It explores how factors such as job satisfaction, leadership, work-life balance, innovation, company recognition and overtime influences employee turnover.",
+        tech_stack: "Excel, Python, SQL, Power BI",
+        github_url: "https://github.com/ClauseJr/employee-attrition-analysis"
     }
 ];
 
