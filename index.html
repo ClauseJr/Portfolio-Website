@@ -4,70 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phabian's Portfolio</title>
-    <link rel="icon" type="image/png" href="favicon (2).png">
+    <meta name="description" content="Phabian Otieno — Data Analyst specializing in SQL, Python, Excel, and Power BI. Explore projects in data analytics, dashboards, and business intelligence.">
+
+    <meta property="og:title" content="Phabian Otieno — Data Analyst Portfolio">
+    <meta property="og:description" content="Data Analyst specializing in SQL, Python, Excel, and Power BI.">
+    <meta property="og:image" content="your-preview-image-url.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-domain.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body data-page="home">
+
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <h1>ClauseJ..</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+<nav class="navbar">
+    <div class="logo">
+        <span class="logo-icon">&lt;&gt;</span>
+        <h1>Phabian<span class="accent">.</span></h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-btn-wrapper">
+            <a href="https://wa.me/254764835746?text=Hi%20Phabian%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20you." 
+                target="_blank" 
+                class="hire-btn track-click" 
+                data-name="hire_me">Hire Me
+            </a>
+        </li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
 <!-- Hero Section -->
 <section id="home" class="hero" data-page="home">
     <div class="hero-container">
-        <div class="hero-image">
-            <img src="Phabian Otieno.png" alt="Phabian Otieno">
-        </div>
         <div class="hero-text">
-            <h1>Hello, </h1>
-            <h1>I'm Phabian</h1>
-            <p class="hero-role">
-                And I am a <span id="typing-text"></span>
-            </p>
+            <h1>Phabian <span class="accent">Otieno</span></h1>
+            <span class="hero-badge">Data Analyst</span>
             <p>
-                Specialized in transforming complex business challenges into data-driven insights through SQL, Excel, Power BI, and Python.
+                Delivering data-driven insights that solve business challenges and unlock opportunities for growth. 
+                I specialize in analytics, reporting, and business intelligence using SQL, Python, Excel, and Power BI.
             </p>
 
-            <div class="hero-contact-icons">
-                <a href="mailto:otienophabian200@gmail.com" 
-                    class="track-click" data-name="email_icon" 
-                    title="Email">
-                    <img src="Email Icon.png" alt="Email" class="contact-icon-img">
-                </a>
-                <a href="https://www.linkedin.com/in/phabian-otieno-6268b1286/" 
+            <div class="hero-cta-row">
+                <a href="https://drive.google.com/file/d/1dWz5XqkwLPj0_ph1xMjjnLyVbrJxyXQG/view?usp=sharing"
                     target="_blank" 
-                    class="track-click" data-name="linkedin_icon" 
-                    title="LinkedIn">
-                    <img src="Linkedin.png" alt="LinkedIn" class="contact-icon-img">
+                    class="btn track-click download-cv" 
+                    data-name="download_cv">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download CV
                 </a>
-                <a href="https://github.com/ClauseJr"
-                    target="_blank" 
-                    class="track-click" data-name="github_icon" 
-                    title="GitHub">
-                    <img src="GitHub icon.png" alt="GitHub" class="contact-icon-img">
-                </a>
-            </div>
 
-            <a href="https://drive.google.com/file/d/1dWz5XqkwLPj0_ph1xMjjnLyVbrJxyXQG/view?usp=sharing"
-                target="_blank" 
-                class="btn track-click download-cv" 
-                data-name="download_cv">Download CV</a>
+                <div class="hero-contact-icons">
+                    <a href="https://www.linkedin.com/in/phabian-otieno-6268b1286/" 
+                        target="_blank" 
+                        class="track-click" data-name="linkedin_icon" 
+                        title="LinkedIn">
+                        <img src="Linkedin.png" alt="LinkedIn" class="contact-icon-img">
+                    </a>
+                    <a href="https://github.com/ClauseJr"
+                        target="_blank" 
+                        class="track-click" data-name="github_icon" 
+                        title="GitHub">
+                        <img src="GitHub icon.png" alt="GitHub" class="contact-icon-img">
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </a>
     </div>
 </section>
 
@@ -76,139 +98,328 @@
 
     <div class="about-container">
 
-        <div class="about-text">
-            <h2>About Me</h2>
+        <div class="about-text reveal">
+            <h2>About <span class="accent">Me</span></h2>
 
             <p>
-            I am a results-driven Data Analyst focused on transforming complex business challenges into
-            data-driven success stories. My work spans the complete analytics lifecycle — from data
-            extraction and cleaning to visualization and strategic storytelling using SQL, Excel, Power BI, and Python.
+            I am a results-driven Data Analyst with 
+            hands-on experience in transforming complex business problems into clear, actionable insights. 
+            My core toolkit includes SQL, Excel, Power BI, and Python (Pandas, NumPy, Matplotlib), 
+            enabling me to work across the full data analytics lifecycle — from data extraction, cleaning, 
+            and transformation to visualization and insight delivery.
             </p>
 
             <p>
-            I combine technical expertise with business understanding to move beyond simply
-            answering what happened, and instead focus on why it happened and what actions
-            should follow. This approach enables organizations to make smarter,
-            data-informed decisions.
+            I specialize in designing efficient data workflows, building interactive dashboards, 
+            and performing exploratory and diagnostic analysis to uncover trends, patterns, and performance drivers. 
+            I have practical experience working with relational databases, writing optimized SQL queries, 
+            and developing reports that support business monitoring and decision-making.
             </p>
 
+            <p>
+            I enjoy turning raw, often messy data into meaningful stories that answer not only what is happening, 
+            but why it is happening and what actions should be taken next. My focus is on delivering insights 
+            that are both technically sound and strategically valuable, helping organizations make confident, data-informed decisions.
+            </p>
+
+            <p>
+            I am continuously improving my skills in data analytics and visualization, 
+            staying current with modern tools and best practices to deliver high-quality, impactful analytical solutions.
+            </p>
+
+            <div class="about-counters reveal">
+                <hr class="about-separator">
+                <div class="counters-row">
+                    <div class="counter-item">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="counter-item">
+                        <h3>5+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="counter-item">
+                        <h3>2+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="about-image">
-            <img src="Phabian img.png" alt="About Phabian">
+        <div class="about-highlights reveal">
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="highlight-text">
+                    <h3>Reproducible Analysis</h3>
+                    <p>Building structured, transparent analyses using Python (Pandas) and SQL to ensure accuracy, consistency, and traceable results.</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="highlight-text">
+                    <h3>BI & Analytics Tools</h3>
+                    <p>Developing interactive dashboards and reports using Power BI, SQL, Excel, and Python to transform raw data into actionable insights.</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="highlight-text">
+                    <h3>End-to-End Data Workflow</h3>
+                    <p>Handling the full analytics pipeline — from data extraction and cleaning (SQL, Python) to analysis and visualization (Power BI, Excel) and insight reporting.</p>
+                </div>
+            </div>
         </div>
+
+        
 
     </div>
+
+    
 
 </section>
 
 <!-- Projects Section -->
 <section id="projects" class="projects" data-page="projects">
 
-    <h2>Projects</h2>
+    <h2 class="reveal">Featured <span class="accent">Projects</span></h2>
 
-    <div class="project-grid" id="projects-container">
+    <p class="reveal">
+        A curated selection of my recent projects demonstrating end-to-end data analytics work, 
+        from data preparation and analysis to visualization and insight-driven reporting 
+        across both academic and practical applications.
+    </p>
+
+    <div class="project-grid reveal" id="projects-container">
 
     <!-- Projects will load here automatically -->
 
     </div>
 
 </section>
+
 <!-- Skills Section -->
+
 <section id="skills" class="skills" data-page="skills">
 
-    <h2>Skills</h2>
+    <h2 class="reveal">Technical <span class="accent">Skills</span></h2>
+    <p class="skills-subtitle reveal">My technical toolkit includes a range of tools for data analysis and visualization, supporting data cleaning, exploration, and insight-driven reporting.</p>
 
-    <div class="skills-container">
+    <div class="skills-grid reveal">
 
-        <div class="skill-category">
-            <h3>Data Analysis</h3>
-            <div class="skill-items">
-                <span>SQL</span>
-                <span>Advanced Excel</span>
-                <span>Statistical Analysis</span>
-                <span>Data Cleaning</span>
-                <span>A/B Testing</span>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
             </div>
+            
+            <h3>SQL</h3>
+            <span class="skill-level">Advanced</span>
         </div>
 
-        <div class="skill-category">
-            <h3>Data Visualization</h3>
-            <div class="skill-items">
-                <span>Power BI</span>
-                <span>Dashboard Development</span>
-                <span>KPI Reporting</span>
-                <span>Data Storytelling</span>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-python"></i>
             </div>
+            <h3>Python</h3>
+            <span class="skill-level">Advanced</span>
         </div>
 
-        <div class="skill-category">
-            <h3>Data Management</h3>
-            <div class="skill-items">
-                <span>PostgreSQL</span>
-                <span>ETL Processes</span>
-                <span>Data Modeling</span>
-                <span>Data Governance</span>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-chart-bar"></i>
             </div>
+            <h3>Power BI</h3>
+            <span class="skill-level">Advanced</span>
         </div>
 
-        <div class="skill-category">
-
-            <h3>Technical Tools</h3>
-
-            <div class="skill-bar">
-                <span>SQL</span>
-                <div class="progress">
-                <div class="progress-fill sql"></div>
-                </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-file-excel"></i>
             </div>
+            <h3>Excel</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
 
-            <div class="skill-bar">
-                <span>Excel</span>
-                <div class="progress">
-                <div class="progress-fill excel"></div>
-                </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
             </div>
+            <h3>PostgreSQL</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
 
-            <div class="skill-bar">
-                <span>Power BI</span>
-                <div class="progress">
-                <div class="progress-fill powerbi"></div>
-                </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-git-alt"></i>
             </div>
+            <h3>Git/GitHub</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
 
-            <div class="skill-bar">
-                <span>Python</span>
-                <div class="progress">
-                <div class="progress-fill python"></div>
-                </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
             </div>
+            <h3>MySQL</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
 
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa fa-code"></i>
+            </div>
+            <h3>Jupyter Notebook</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa fa-code"></i>
+            </div>
+            <h3>Html/CSS</h3>
+            <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <h3>Javascript</h3>
+            <span class="skill-level">Advanced</span>
         </div>
 
     </div>
-    
+</section>
 
+<!-- Certificates Section -->
+
+<section id="certificates" class="certificates" data-page="certificates">
+
+    <h2 class="reveal">Licenses & <span class="accent">Certifications</span></h2>
+    <div class="header-underline"></div>
+
+    <div class="certs-grid reveal">
+        <div class="cert-card">
+            <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Introduction to generative AI and agents</h3>
+            <div class="cert-issuer">
+                <i class="fa-regular fa-circle-check"></i> Microsoft
+            </div>
+            <div class="cert-meta">
+                <p><i class="fa-regular fa-calendar-days"></i> Issued Jan 2026</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Certified SQL Basics</h3>
+            <div class="cert-issuer">
+                <i class="fa-regular fa-circle-check"></i> HackerRank
+            </div>
+            <div class="cert-meta">
+                <p><i class="fa-regular fa-calendar-days"></i> Issued Oct 2025</p>
+                <span class="cert-id">ID: 8bbc441c278c</span>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Web programming with python and JavaScript</h3>
+            <div class="cert-issuer">
+                <i class="fa-regular fa-circle-check"></i> Edx Harvard
+            </div>
+            <div class="cert-meta">
+                <p><i class="fa-regular fa-calendar-days"></i> Issued Mar 2026</p>
+                <span class="cert-id">ID: HX-CS50W-2026-03-09-GK-7890</span>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Certified SQL Intermediate</h3>
+            <div class="cert-issuer">
+                <i class="fa-regular fa-circle-check"></i> HackerRank
+            </div>
+            <div class="cert-meta">
+                <p><i class="fa-regular fa-calendar-days"></i> Issued Apr 2026</p>
+                <span class="cert-id">ID: 5dddb2837doo</span>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Certified python basic</h3>
+            <div class="cert-issuer">
+                <i class="fa-regular fa-circle-check"></i> HackerRank
+            </div>
+            <div class="cert-meta">
+                <p><i class="fa-regular fa-calendar-days"></i> Issued May 2026</p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <!-- Contact Section -->
+
 <section id="contact" class="contact" data-page="contact">
 
-    <div class="contact-container">
+    <div class="contact-container reveal">
 
-        <h2>Contact Me</h2>
+        <h2>Let's Work <span class="accent">Together</span></h2>
 
         <p class="contact-subtitle">
-            Have a project, collaboration, or opportunity? Send me a message.
+            Have a project in mind or just want to say hi? 
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
         </p>
 
-        <form id="contact-form" action="https://formspree.io/f/mkoqqkbq" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" maxlength="2000" required></textarea>
-            <button type="submit" class="send-btn">Send Message</button>
-        </form>
-        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=otienophabian200@gmail.com&su=Let%27s%20Connect&body=Hi%20Phabian%2C%20I%20found%20your%20portfolio%20and%20would%20love%20to%20get%20in%20touch." 
+            target="_blank" 
+            class="say-hello-btn">
+            <i class="fa-regular fa-envelope"></i> Say Hello <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="contact-social-row">
+            <a href="https://wa.me/254764835746?text=Hi%20Phabian%2C%20I%27d%20like%20to%20get%20in%20touch!" 
+                target="_blank" class="social-item">
+                <div class="social-icon-circle">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://www.linkedin.com/in/phabian-otieno-6268b1286/" target="_blank" class="social-item">
+                <div class="social-icon-circle">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/ClauseJr" target="_blank" class="social-item">
+                <div class="social-icon-circle">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <span>GitHub</span>
+            </a>
+
+        </div>
 
     </div>
 
@@ -217,6 +428,9 @@
 <!-- Footer -->
 <footer>
     <p>&copy; 2026 Phabian. All Rights Reserved.</p>
+    <a href="#home" class="back-to-top">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+    </a>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="portfolio.js"></script>
